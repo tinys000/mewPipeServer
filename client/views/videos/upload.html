@@ -1,0 +1,32 @@
+<div class="row">
+        <div class="row">
+            <div class="input-field col s6">
+                <input ng-model="name" id="videoName" type="text" class="validate" required>
+                <label for="videoName">Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea ng-model="description" id="VideoDescription" class="materialize-textarea"></textarea>
+                <label for="VideoDescription">Textarea</label>
+            </div>
+        </div>
+        <p>Confidentality</p>
+        <div ng-init="confidentiality=0">
+            <input ng-model="confidentiality" value="0" type="radio" id="0" checked="checked" />
+            <label for="0">Public</label>
+
+            <input ng-model="confidentiality"  value="1" type="radio" id="1" />
+            <label for="1">Link access</label>
+
+            <input ng-model="confidentiality"  value="2" type="radio" id="2" />
+            <label for="2">Private</label>
+        </div>
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>Send Video</span>
+                <input ngf-select ng-model="files" type="file" />
+            </div>
+        </div>
+
+</div>

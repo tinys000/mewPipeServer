@@ -1,0 +1,72 @@
+<div>
+  <div class="video_contener">
+    <div class="video_video_contener black">
+      <video controls src="{{videoUrl}}"></video>
+    </div>
+    <div class="side_video_contener">
+        <span class="title blue-text">{{video.name}}</span>
+        <div class="social">
+          <span class="left">
+            <i class="mdi-action-visibility notsotiny teal-text text-darken-1" title="vues"></i><span class="quantity">{{video.nbView}}</span>
+            <i class="mdi-social-share notsotiny blue-text text-lighten-1" title="partager" onclick="videoShare();"></i><span class="quantity">{{video.shareCount}}</span>
+          </span>
+          <span class="right">
+            <i class="mdi-action-thumb-up notsotiny light-green-text text-darken-2" title="aimer cette vidéo" onclick="videoLike();"></i><span class="quantity">{{video.likeCount}}</span>
+            <i class="mdi-action-thumb-down notsotiny red-text" title="ne pas aimer cette vidéo" onclick="videoDislike();"></i><span class="quantity">{{video.dislikeCount}}</span>
+          </span>
+          <div></div>
+          <span class="share_link">
+            <br>
+            <a class="waves-effect waves-light btn blue lighten-1"   onclick="videoCopyShareLink();"></i>copy</a><input class="browser-default" value="http://www.LINK.LINKLINK?LINK=LINKLINK&LINKLINK=LINKLINKLI&NKLINKLINKLINK=LINKLINKLINKLINKLINKLINKLINKLINKLI&N=K" id="link_urk" type="text">
+          </span>
+        </div>
+        <div class="content">
+          <p>{{video.description}}</p>
+        </div>
+    </div>
+  </div>
+</div>
+  
+
+
+
+<!-- Nicolas stuff
+
+<div class="videoCard" ng-controller="videoView">
+  <div class="card">
+    <div class="card-image">
+        <video controls  src="{{videoUrl}}"></video>
+    </div>
+    <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">{{video.name}}<i class="mdi-navigation-more-vert right" ></i></span>
+        <div>
+            <span class="left">
+              <i class="mdi-action-thumb-down tiny ">{{video.dislikeCount}}</i>
+              <i class="mdi-action-thumb-up tiny ">{{video.likeCount}}</i>
+            </span>
+            <span class="tabul">Views: {{video.nbView}}</span>
+            <span class="right">
+              <a class="waves-effect waves-light btn">Share</a>
+              <br><span class="tabul">{{video.shareCount}} times</span>
+            </span>
+        </div>
+    </div>
+    <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{video.name}} <i class="mdi-navigation-close right"></i></span>
+        <p>Description :   {{video.description}}</p>
+        <div>
+          <span class="left">
+            <i class="mdi-action-thumb-down tiny ">{{video.dislikeCount}}</i>
+            <i class="mdi-action-thumb-up tiny ">{{video.likeCount}}</i>
+          </span>
+          <span class="tabul">Views: {{video.nbView}}</span>
+          <span class="right">
+            <a class="waves-effect waves-light btn">Share</a>
+            <br><span class="tabul">{{video.shareCount}} times</span>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+-->

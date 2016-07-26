@@ -1,0 +1,56 @@
+<div class="container">
+<div class="videoCard" >
+    <div class="card">
+        <div class="card-image">
+            <video controls  src="{{videoUrlIndex}}"></video>
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">{{videoList[0].name}}<i class="mdi-navigation-more-vert right" title="test"></i></span>
+            <div>
+                          <span class="left">
+                          <i class="mdi-action-thumb-down tiny ">{{videoList[0].dislikeCount}}</i>
+                          <i class="mdi-action-thumb-up tiny ">{{videoList[0].likeCount}}</i>
+                          </span>
+                <span class="tabul">Views: {{videoList[0].nbView}}</span>
+                          <span class="right">
+                              <a class="waves-effect waves-light btn">Share</a>
+                              <br><span class="tabul">{{videoList[0].shareCount}} times</span>
+                          </span>
+            </div>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{videoList[0].name}} <i class="mdi-navigation-close right"></i></span>
+            <p>Description :   {{video.description}}</p>
+            <div>
+                          <span class="left">
+                          <i class="mdi-action-thumb-down tiny ">{{videoList[0].dislikeCount}}</i>
+                          <i class="mdi-action-thumb-up tiny ">{{videoList[0].likeCount}}</i>
+                          </span>
+                <span class="tabul">Views: {{videoList[0].nbView}}</span>
+                          <span class="right">
+                              <a class="waves-effect waves-light btn">Share</a>
+                              <br><span class="tabul">{{videoList[0].shareCount}} times</span>
+                          </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="videoCardSmall"  ng-repeat="video in videoList">
+        <div class="card" >
+            <div class="card-image">
+                <div class="card-image">
+                    <a href="/#/video/{{video.hash}}"><img src="http://localhost:8080/video/thumb/{{video.hash}}.jpg"/></a>
+
+                </div>
+                <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{video.name}}</span>
+            </div>
+            <div class="card-action">
+                <a href="/#/video/{{video.hash}}">Watch this Video</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

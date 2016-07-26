@@ -1,0 +1,150 @@
+.videoCard{
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+
+.videoCard video{
+    width: 100%;
+}
+
+.videoCardSmall{
+    width: 400px;
+    float: left;
+    margin: 50px 0 0 25px;
+}
+
+.responsive-video{
+    width: 100%;
+}
+
+.tabul{
+    margin-left: 10%;
+}
+
+#registerContent{
+    max-width: 800px;
+    margin: 100px auto 0 auto;
+}
+
+.titlePage{
+    color: #1e88e5;
+}
+
+/*Virgile*/
+
+#logo_menu{
+    margin: 0 10px 0 10px;
+}
+
+
+
+/* Page viewVideo */
+
+.video_contener{
+    height: calc(100% - 64px);
+    width: 100%;
+}
+
+.video_video_contener{
+    width: 83%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.video_video_contener video{
+    height: 100%;
+    max-width: 100%;
+}
+
+.side_video_contener{
+    height: 100%;
+    width: 17%;
+    float: right;
+    padding: 20px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.side_video_contener .title{
+    line-height: 38px;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    display: block;
+}
+.side_video_contener .social{
+    width: 100%;
+    border-top: 1px solid rgba(160,160,160,0.2);
+    border-bottom: 1px solid rgba(160,160,160,0.2);
+}
+.side_video_contener .social > div{
+    height: 34px;
+    width: 100%;
+}
+.side_video_contener .social .quantity{
+    vertical-align: text-bottom;
+    font-size: 17px;
+    margin-left: 3px;
+}
+.side_video_contener .social .share_link{
+    display: block;
+    display: none;
+    margin-top: -22px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.side_video_contener .social .share_link a{
+    padding: 0 0.5rem;
+}
+.side_video_contener .social .share_link input{
+    position: absolute;
+    width: auto;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.side_video_contener .content{
+}
+
+i.notsotiny{
+    font-size: 1.5rem;
+}
+
+/* responsive page viewVideo */
+
+@media screen and (max-width: 1600px){
+    .video_video_contener{
+        width: 80%;
+    }
+    .side_video_contener{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .video_video_contener{
+        width: 70%;
+    }
+    .side_video_contener{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .video_contener{
+        height: auto;
+    }
+    .video_video_contener{
+        width: 70%;
+        height: auto;
+        width: 100%;
+    }
+    .video_video_contener video{
+        height: auto;
+        width: 100%;
+    }
+    .side_video_contener{
+        width: 100%;
+        overflow-y: visible;
+        overflow-x: visible;
+    }
+}

@@ -1,0 +1,76 @@
+<html>
+ <head>
+     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+     <script src="bower_components/ng-file-upload-shim/ng-file-upload-shim.min.js"></script>
+     <script src="bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+     <script src="bower_components/satellizer/satellizer.min.js"></script>
+     <script type="text/javascript" src="app.js"></script>
+     <script type="text/javascript" src="src/controllers/videoController.js"></script>
+     <script type="text/javascript" src="src/controllers/userController.js"></script>
+     <script type="text/javascript" src="src/services/videoProvider.js"></script>
+     <script type="text/javascript" src="assets/js/main.js"></script>
+     <script type="text/javascript" src="src/routing/routing.js"></script>
+
+     <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+     <script type="text/javascript" src="assets/js/materialize.js"></script>
+     <link rel="stylesheet" href="assets/css/styles.css"/>
+     <link rel="stylesheet" href="assets/css/materialize.min.css"/>
+
+ </head>
+ <body ng-app="mewPipe">
+    <div class="navbar-fixed">
+         <nav >
+             <div class="nav-wrapper blue">
+                 <a href="/#/"><img src="assets/images/mew.gif" alt=""/></a>
+                 <a href="/#/" class="brand-logo center">Mew Pipe</a>
+                 <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="mdi-navigation-menu"></i></a>
+                 <ul class="right hide-on-med-and-down">
+                     <li>
+                         <form>
+                             <div class="input-field">
+                                 <input id="search" type="search" required>
+                                 <label for="search"><i class="mdi-action-search"></i></label>
+                                 <i class="mdi-navigation-close"></i>
+                             </div>
+                         </form>
+                     </li>
+                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">My Account<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                 </ul>
+                 <ul class="side-nav" id="mobile-demo">
+                     <li><a href="/#/">Index</a></li>
+                     <li><a href="/#/user/login">Login</a></li>
+                     <li><a href="/#/user/register">Register</a></li>
+                     <li><a href="/#/upload">Add a video</a></li>
+                     <li><a href="/#/">My videos</a></li>
+                 </ul>
+                 <ul id="dropdown1" class="dropdown-content">
+                     <li><a href="/#/user/login">Login</a></li>
+                     <li><a href="/#/user/register">Register</a></li>
+                     <li><a href="/#/upload">Add a video</a></li>
+                     <li><a href="/#/">My videos</a></li>
+                 </ul>
+             </div>
+         </nav>
+    </div>
+    <div ng-view>
+        <!-- Content -->
+    </div>
+ </body>
+</html>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $(".button-collapse").sideNav();
+    })
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+    });
+
+    $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+    });
+
+</script>

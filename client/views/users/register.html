@@ -1,0 +1,39 @@
+<div id="registerContent">
+    <h2 class="titlePage">Register</h2>
+    <div class="row">
+        <form name="user" class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input ng-model="firstName" name="firstName" id="firstName" type="text" class="validate">
+                    <label for="firstName">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input ng-model="lastName" name="lastName" id="lastName" type="text" class="validate">
+                    <label for="lastName">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input ng-model="email" name="email" id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s6">
+                    <input ng-model="birthDate" name="birthDate" id="birthdate" type="date" class="datepicker">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input ng-model="password" name="password" id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-field col s12">
+                    <input ng-model="passwordConfirm" name="passwordConfirm" id="passwordConfirm" type="password" class="validate">
+                    <label for="passwordConfirm">Confirmation</label>
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light" ng-click="send(user)" name="action">Submit
+                <i class="mdi-content-send right"></i>
+            </button>
+        </form>
+    </div>
+</div>
